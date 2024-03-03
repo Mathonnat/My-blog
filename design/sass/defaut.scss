@@ -1,0 +1,126 @@
+$theme-colors: (
+    "primary": #40E0D0
+);
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+$couleurA:   #40E0D0;
+$couleurB:   #00CED1;
+$couleurC:   #C0C0C0;
+
+body {
+    background-color: $couleurC;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content {
+    background-color: $couleurC;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+h1 {
+    color: white;
+}
+.bouton {
+        display: inline-block;
+        color: white;
+        border-color: transparent;
+        background-color: $couleurB;
+        border-radius: 10px;
+        text-align: center;
+        width: 150px;
+        height: 35px;
+        padding: 5px
+}
+
+#connexion {
+    @extend .bouton;
+    margin-top: 30px;
+}
+#inscription {
+    @extend .bouton;
+    margin-top: 30px;
+}
+
+button, .btn {
+    background-color: $couleurA;
+    color: white;
+    @extend .bouton;
+}
+
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  gray;
+    color: white;
+}
+
+.elementA {
+    display: flex;
+    color: white;
+    width: 70%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+.article-container {
+margin-bottom: 20px; 
+ }
+.comment-container {
+margin-top: 10px;
+}
+
+footer {
+    background-color: $couleurB;
+    text-align: center;
+    padding: 15px;
+}
+
+.containerA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    color: black;
+}
+
+.formulaire {
+    margin: auto;
+}
+
+.connect {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.containerLogout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 20vh;
+}
