@@ -71,6 +71,10 @@
                 
                 echo "<form method='post' action='myArticles.php'>";
                 echo "<input type='hidden' name='id' value='" . $dbArticle['id'] . "' />";
+                echo "<label for='titre_article'>Titre:</label><br>";
+                echo "<input type='text' id='titre_article' name='titre_article' value='" . $dbArticle['title'] . "'><br>";
+                echo "<label for='contenu_article'>Contenu:</label><br>";
+                echo "<textarea id='contenu_article' name='contenu_article'>" . $dbArticle['content'] . "</textarea><br><br>";
                 echo "<input type='submit' class='btn btn-primary mt-2' name='modifier_article' value='Modifier' />";
                 echo "</form>"; 
             }
@@ -97,10 +101,10 @@
             } else {
                 echo "<p>Aucun commentaire pour cet article.</p>";
             }
-            echo "</div>"; // Fin de la zone des commentaires
+            echo "</div>";
 
-            echo "</div>"; // Fin de l'article
-            echo "</div>"; // Fin du container
+            echo "</div>"; 
+            echo "</div>"; 
         }
     }
     ?>
