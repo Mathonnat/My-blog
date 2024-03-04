@@ -57,7 +57,7 @@ if(!empty($_POST["pseudo"]) && !empty($_POST["email"]) && !empty($_POST["passwor
                 <input type="email" name="email" class="form-control mt-2" placeholder="Entrez votre email">
                 <input type="password" name="password" class="form-control mt-2" placeholder="Entrez votre mot de passe">
                 <button type="submit" class="btn btn-primary">S'inscrire</button>
-                <a id="connexion" href="connexion.php">Se connecter</a>
+                <a class="buttonn mt-2" href="connexion.php">Se connecter</a>
             </form>
     </section>
 </div>
