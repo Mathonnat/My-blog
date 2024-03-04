@@ -37,11 +37,9 @@ a {
 h1 {
     color: white;
 }
-.bouton {
+.buttonn {
         display: inline-block;
-        color: white;
         border-color: transparent;
-        background-color: $couleurB;
         border-radius: 10px;
         text-align: center;
         width: 150px;
@@ -49,19 +47,12 @@ h1 {
         padding: 5px
 }
 
-#connexion {
-    @extend .bouton;
-    margin-top: 30px;
-}
-#inscription {
-    @extend .bouton;
-    margin-top: 30px;
-}
 
-button, .btn {
+
+button, .btn, .buttonn{
     background-color: $couleurA;
+    @extend .buttonn;
     color: white;
-    @extend .bouton;
 }
 
 
@@ -103,7 +94,6 @@ footer {
     align-items: center;
     height: 100%;
     margin: 0;
-    color: black;
 }
 
 .formulaire {
@@ -111,7 +101,7 @@ footer {
 }
 
 .connect {
-    background-color: black;
+    background-color: #FF7F50;
     padding: 20px;
     border-radius: 8px;
 }
