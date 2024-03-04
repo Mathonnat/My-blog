@@ -11228,11 +11228,9 @@ h1, .h1 {
   color: white;
 }
 
-.bouton, button, .btn, #inscription, #connexion {
+.buttonn, button, .btn {
   display: inline-block;
-  color: white;
   border-color: transparent;
-  background-color: #00CED1;
   border-radius: 10px;
   text-align: center;
   width: 150px;
@@ -11240,15 +11238,7 @@ h1, .h1 {
   padding: 5px;
 }
 
-#connexion {
-  margin-top: 30px;
-}
-
-#inscription {
-  margin-top: 30px;
-}
-
-button, .btn {
+button, .btn, .buttonn {
   background-color: #40E0D0;
   color: white;
 }
@@ -11293,7 +11283,6 @@ footer {
   align-items: center;
   height: 100%;
   margin: 0;
-  color: black;
 }
 
 .formulaire {
@@ -11301,7 +11290,7 @@ footer {
 }
 
 .connect {
-  background-color: black;
+  background-color: #FF7F50;
   padding: 20px;
   border-radius: 8px;
 }
